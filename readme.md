@@ -8,6 +8,7 @@ Diakui atau tidak, penuaan penduduk di Indonesa telah menjadi sebuah fenomena. B
  2. Setelah topik didapatkan, tahap selanjutnya yakni membuat outline materi website, yang terdiri dari 6 outline utama, yakni: Prolog (Penyebab Utama), Penyebab Lanjutan, Proses Penuaan, Tantangan, Peluang, dan Rekomendasi.
  3. Selanjutnya adalah pencarian literatur/pustaka/data dan merancang naskah tulisan serta menentukan jenis analisis sesuai data yang diperoleh.
  4. Setelah didapat gambaran dari materi dalam bentuk tulisan beserta jenis data dan analisisnya, maka dibuat prototype desain web yang meliputi: tema/gaya desain, pemilihan font, pemilihan warna, tata letak, dan sebagainya
+
 **Desain 1 (brainstorming desain awal):**
 ![enter image description here](https://www.kohryan.page/images/misc/desain1.png)
 **Desain Final:**
