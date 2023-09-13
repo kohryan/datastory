@@ -13,6 +13,7 @@ Diakui atau tidak, penuaan penduduk di Indonesa telah menjadi sebuah fenomena. B
 ![enter image description here](https://www.kohryan.page/images/misc/desain1.png)
 **Desain Final:**
 ![enter image description here](https://www.kohryan.page/images/misc/desain2.png)
+ 
  5. Agar terkesan santai dan menarik, tema yang diambil adalah tema komik dengan pewarnaan cerah dan font komik. 
  6. Barulah penulisan kode CSS dan HTML dituangkan ke code editor sesuai dengan desain dan outline yang telah dirancang. Sementara untuk kode JavaScript kebanyakan menggunakan library JS yang tersedia bebas di internet.
  
