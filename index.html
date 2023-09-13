@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Penduduk Indonesia Menua? Tantangan Hingga Peluang Memetik Bonus Demografi Kedua - DataStory</title>
+        <meta content="Bagaimana bisa penduduk Indonesia menua? Tantangan apa yang mesti dihadapi dan apakah bisa menciptakan peluang
+        yang menguntungkan negara?" name="description">
+        <meta content="Lansia, Penduduk, Data, Storytelling, Demografi, Website" name="keywords">
+
+        <!-- Favicons -->
+        <link href="aset/img/icon/favicon.png" rel="icon">
+        <link href="aset/img/icon/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Comic+Neue:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="aset/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="aset/vendor/aos/aos.css" rel="stylesheet">
+        <link href="aset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="aset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="aset/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="aset/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
+
+        <!-- Leaflet JS/CSS -->
+        <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin="" />
+
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+          integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+          crossorigin=""></script>
+        
+        <!-- Interactive Map Style -->
+        <style>
+          #mapsection {
+            width: 100%;
+            height: 600px;
+            padding: 0 20px 20px;
+            background-color: #ffd7f4;
+            z-index: -1;
+          }
+        </style>
+      
+        <style>
+          #map {
+            width: 70%;
+            height: 500px;
+            background: #8f2978;
+          }
+          .info {
+            padding: 6px 8px;
+            font: 14px/16px "Roboto", sans-serif;
+            color: #000;
+            background: white;
+            border-radius: 5px;
+            z-index: -1;
+          }
+          .info h5 {
+            margin: 0 0 5px;
+            color: #000;
+            font-family: "Roboto", sans-serif;
+          }
+          .legend {
+            text-align: left;
+            line-height: 18px;
+            color: #555;
+          }
+          .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 1;
+          }
+        </style>
+
+        <!-- Main CSS Files -->
+        <link href="aset/css/style.css" rel="stylesheet">
+        <link href="aset/css/hero.css" rel="stylesheet">
+
+        <!-- ApexChart CSS-->
+        <script>
+          window.Promise ||
+            document.write(
+              '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+            )
+          window.Promise ||
+            document.write(
+              '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+            )
+          window.Promise ||
+            document.write(
+              '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+            )
+          </script>
+      
+          <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        
+          <script>
+          // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+          // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+          var _seed = 42;
+          Math.random = function() {
+            _seed = _seed * 16807 % 2147483647;
+            return (_seed - 1) / 2147483646;
+          };
+          </script>
+        <!-- ApexChart CSS-->
+    </head>
+
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+                <a href="index.html" class="logo me-auto me-lg-0"><img src="aset/img/icon/ds-logo.svg" alt="" class="img-fluid"></a> 
+            </div>
+            <div class="header-right me-auto">
+                <a href="https://github.com/kohryan/" class="github"><i class="bx bxl-github"></i></a>
+            </div>
+        </header>
+        <!-- ======= Header ======= -->
+
+        <!-- ======= Navigation ======= -->
+        <header id="navigation" class="d-flex flex-column justify-content-center">
+          <nav id="navbar" class="navbar nav-menu">
+            <ul>
+              <li><a href="#hero" class="nav-link scrollto"><i class="bx bxs-home"></i> <span>Beranda</span></a></li>
+              <li><a href="#prolog" class="nav-link scrollto"><i class="bx bxs-book-open"></i> <span>Prolog: Baby Boom</span></a></li>
+              <li><a href="#harapanhidup" class="nav-link scrollto"><i class="bx bxs-cake"></i> <span>Panjang Umur</span></a></li>
+              <li><a href="#penuaan" class="nav-link scrollto"><i class="bx bxs-pyramid"></i> <span>Proses Penuaan</span></a></li>
+              <li><a href="#tantangan" class="nav-link scrollto"><i class="bx bxs-error-alt"></i> <span>Tantangan</span></a></li>
+              <li><a href="#peluang" class="nav-link scrollto"><i class="bx bxs-bulb"></i> <span>Peluang</span></a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- ======= Navigation ======= -->
+
+        <!-- ======= Hero ======= -->
+        <section id="hero" class="d-flex">
+            <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row">
+                  <div class="heroWrapper">
+                    <img class="heroLogo" src="aset/img/hero/hero-lg.svg" alt="virion part 3" pinger-seen="true"
+                    data-aos="zoom-in" data-aos-delay="200">
+                  </div>
+                  <div class="col-12 offset-lg-1 col-lg-10 text-center text-black mb-2">
+                    <h1><span>Tantangan Hingga Peluang Memetik Bonus Demografi Kedua</span></h1>
+                    <div class="d-flex align-items-center justify-content-center position-relative">
+                      <a href="#prolog" class="button">KOK BISA?</a>
+                    </div>
+                  </div>              
+                </div>
+            </div>
+        </section>
+        <!-- ======= Hero ======= -->
+
+        <!-- ======= Prolog ======= -->
+        <section id="opening" class="opening">
+          <img class="scroll-lagi scroll-lagi1" src="/aset/img/prolog/tandatanya.svg" pinger-seen="true">
+            <div class="container" data-aos="zoom-in" data-aos-delay="100">
+              <div class="row">
+                <div class="d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="d-flex"> 
+                    <div class="mouse align-items-center justify-content-center">
+                      <div class="roll"></div>
+                      <div class="rollshadow"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="prolog" class="prolog">
+          <img class="bganak" src="/aset/img/intro/anak.svg" pinger-seen="true" 
+          data-aos="zoom-in" data-aos-delay="300">
+            <div class="container" data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="heading0" style="margin-top:-30px">
+                  Prolog: Baby Boom
+                </h3>
+                <p class="heading">
+                  Ketika Sensus Penduduk kedua diselenggarakan pada tahun 1971, Badan Pusat Statistik (BPS) mencatat setidaknya hingga tahun 
+                  1970 pendahulu kita punya tingkat kelahiran yang cukup tinggi yakni 5,61 per perempuan usia subur. Artinya, setiap 1 orang 
+                  perempuan bisa memiliki 5-6 orang anak pada masa itu. 
+                </p>
+            </div>
+        </section>
+
+        <section id="intro1" class="intro1">
+            <div class="container1" data-aos="zoom-in" data-aos-delay="100">
+              <p class="heading1">
+                Pada masa-masa itulah Indonesia berada pada era puncak penambahan jumlah bayi yang luar biasa, yang dikenal dengan BABY BOOM. 
+                Nah, bayi-bayi tersebut atau yang lebih dikenal dengan penduduk Baby Boomer saat ini tengah menua, beranak-pinak yang juga mulai
+                menua, dan memperlebar piramida kelompok penduduk tua. Itulah yang disebut penuaan penduduk, yakni kondisi ketika proporsi 
+                penduduk lanjut usia 
+                <a style="color:#4627e3;" class="btn-primary" data-bs-toggle="popover" data-bs-trigger="hover"
+                data-bs-content="Menurut UU No. 13 Tahun 1998 tentang Kesejahteraan Lanjut Usia, penduduk lanjut usia adalah penduduk
+                berusia 60 tahun ke atas">(Lansia)</a> di suatu 
+                wilayah mengalami peningkatan secara progresif. 
+              </p>
+            </div>
+        </section>
+        <!-- ======= Prolog ======= -->
+
+        <!-- ======= Panjang Umur ======= -->
+        <section id="harapanhidup" class="uhh">
+          <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="heading0">
+              Kelahiran Turun, Harapan Hidup Naik, Panjang Umur Indonesia
+            </h3>
+            <div class="heading1" style="margin-top: 20px;">
+              <p style="text-align: center;">
+                  <img class="bgkabar bgkabar1" src="/aset/img/intro/bkkbn1.svg" style="margin: 20px 0;" 
+                  pinger-seen="true" data-aos="flip-up" data-aos-delay="200">
+              </p>
+              <p>
+                  Pada tahun 1970, Badan Koordinasi Keluarga Berencana Nasional (BKKBN) resmi berdiri. Sejak berdirinya BKKBN, keluarga Indonesia 
+                  yang dulunya besar, kini cenderung memiliki jumlah anak yang lebih sedikit, berfokus pada kualitas hidup dan pendidikan yang lebih baik. 
+                  Gencarnya program Keluarga Berencana (KB) mampu menghambat lonjakan pertumbuhan penduduk di usia muda. 
+              </p>
+            </div>
+            <div class="card heading text-center d-flex" style="padding: 10px; margin-bottom: 15px; color: rgba(0, 81, 181); font-weight: bold;">
+              <div class="chart d-flex" id="kelahiran" data-aos="zoom-in" data-aos-delay="100"></div>
+              <div style="color:rgb(129, 129, 129); font-size: small; font-weight: 400; text-transform: none;">
+                Sumber: <span>BPS, Sensus Penduduk, Long Form Sensus Penduduk, dan Proyeksi Penduduk 2020-2050 (bps.go.id)</span></div>
+              <a href="/aset/img/intro/grafik1.svg" class="button pop-lightbox" data-gall="pop-item" 
+                style="display:block; text-transform: none;">
+                🔍 Klik untuk Memperbesar Grafik
+              </a>
+            </div>
+            <script>
+              var options = {
+                series: [{
+                  name: "Angka Kelahiran Total",
+                  data: [5.61, 4.68, 3.33, 2.34, 2.41, 2.18, 2.06, 1.99, 1.95]
+                 }],
+                chart: {
+                  height: 350,
+                  type: 'area',
+                  zoom: {
+                  enabled: true
+                  }
+                },
+                annotations: {
+                xaxis: [{
+                  x: '2030',
+                  x2: '2050',
+                  fillColor: '#FEB019',
+                  opacity: 0.2,
+                  label: {
+                    borderColor: 'none',
+                    style: {
+                    fontSize: '10px',
+                    color: '#000',
+                    background: 'none',
+                    },
+                      offsetY: 1,
+                      text: 'Proyeksi',
+                      }
+                  }]
+                },
+                dataLabels: {
+                  enabled: true
+                },
+                colors: ["#BD0026"],
+                stroke: {
+                  width: 3,
+                  curve: 'smooth'
+                },
+                title: {
+                  text: 'Angka Kelahiran Total (per Perempuan Usia Subur)',
+                  align: 'center'
+                },
+                grid: {
+                  row: {
+                  colors: ['#f3f3f3', 'transparent'], 
+                  opacity: 0.5
+                  },
+                },
+                xaxis: {
+                  categories: ['SP1971', 'SP1980', 'SP1990', 'SP2000', 'SP2010', 'LF SP2020', '2030','2040','2050'],
+                  }
+              };
+              var chart = new ApexCharts(document.querySelector("#kelahiran"), options);
+              chart.render();
+            </script>  
+
+            <p class="heading">
+              Di sisi lain, perbaikan ketersediaan sumber pangan dan peningkatan status kesehatan berhasil 
+              mengurangi risiko penyakit dan menurunkan angka kematian sehingga memperpanjang usia harapan hidup penduduk Indonesia, walhasil
+              rentang usia penduduk lansia menjadi lebih panjang.
+            </p>
+
+            <div class="card heading text-center d-flex" style="padding: 10px; margin-bottom: 15px; color: rgba(0, 81, 181); font-weight: bold;">
+              <div class="chart d-flex" id="harapan" data-aos="zoom-in" data-aos-delay="100"></div>
+              <div style="color:rgb(129, 129, 129); font-size: small; font-weight: 400; text-transform: none;">
+                Sumber: <span>BPS, Statistik Penduduk Lanjut Usia; BPS, Proyeksi Penduduk Indonesia 2020-2050; BPS, IPM Metode Baru (bps.go.id)</span></div>
+                <div style="color:rgb(129, 129, 129); font-size: small; font-weight: 400; text-transform: none; margin-top: 6px;">
+                  Catatan: <span>Persentase Penduduk Lansia dan Usia Harapan Hidup 2015-2022 merupakan hasil penghitungan dari data Survei Sosial Ekonomi Nasional (Susenas); 
+                    Persentase Penduduk Lansia dan Usia Harapan Hidup 2025-2050 merupakan hasil pemodelan dari Proyeksi Penduduk Indonesia 2020-2050</span></div>
+              <a href="/aset/img/intro/grafik2.svg" class="button pop-lightbox" data-gall="pop-item" 
+                style="display:block; text-transform: none;">
+                🔍 Klik untuk Memperbesar Grafik
+              </a>
+            </div>
+            <script>
+              var options = {
+                series: [{
+                  name: 'Persentase Penduduk Lansia',
+                  type: 'column',
+                  data: [4.37,5.45,6.29,7.18,7.59,9.93,10.82,10.48,11.93,14.10,16.31,18.77,20.31,21.90],
+                }, {
+                  name: 'Usia Harapan Hidup (Tahun)',
+                  type: 'line',
+                  data: [47.70,52.20,59.80,65.50,69.81,71.47,71.57,71.85,74.24,74.86,75.58,76.06,77.37,77.56]
+                }],
+                colors: ["#4627e3","#BD0026"],
+                chart: {
+                  height: 350,
+                  type: 'line',
+                  },
+                stroke: {
+                  width: [0, 3],
+                  curve: 'smooth'
+                  },
+                dataLabels: {
+                  enabled: true,
+                  enabledOnSeries: [0,1],
+                },
+                plotOptions: {
+                  bar: {
+                  borderRadius: 0,
+                  horizontal: false,
+                  dataLabels: {
+                    position: 'middle'
+                    }
+                  },
+                },
+                grid: {
+                  row: {
+                  colors: ['#f3f3f3', 'transparent'], 
+                  opacity: 0.5
+                  },
+                },
+                labels: ['1971','1980','1990','2000','2010','2020','2021','2022','2025','2030','2035','2040','2045','2050'],
+                annotations: {
+                xaxis: [{
+                  x: '2025',
+                  x2: '2050',
+                  fillColor: '#FEB019',
+                  opacity: 0.2,
+                  label: {
+                    borderColor: 'none',
+                    style: {
+                    fontSize: '10px',
+                    color: '#000',
+                    background: 'none',
+                    },
+                      offsetY: 1,
+                      text: 'Proyeksi',
+                      }
+                  },
+                  {
+                  x: '2021',
+                  x2: '2022',
+                  fillColor: '#FEB019',
+                  opacity: 0.2,
+                  label: {
+                    borderColor: 'none',
+                    style: {
+                    fontSize: '10px',
+                    color: '#000',
+                    background: 'none',
+                    },
+                      offsetY: 1,
+                      text: 'Data Susenas',
+                      }
+                  },
+                  {
+                  x: '1971',
+                  x2: '2020',
+                  fillColor: '#FEB019',
+                  opacity: 0.2,
+                  label: {
+                    borderColor: 'none',
+                    style: {
+                    fontSize: '10px',
+                    color: '#000',
+                    background: 'none',
+                    },
+                      offsetY: 1,
+                      text: 'Data SP',
+                      }
+                  }    
+                  ],
+                },
+                yaxis: [
+                  {
+                    title: {
+                    text: 'Persentase Penduduk Lansia',
+                    },
+                  }, {
+                  opposite: true,
+                  min: 46,
+                  max: 80,
+                  title: {
+                  text: 'Usia Harapan Hidup',
+                  }
+                }]
+              };
+              var chart = new ApexCharts(document.querySelector("#harapan"), options);
+              chart.render();
+            </script>  
+          </div>
+          <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="heading0">
+              Sejak Kapan Penduduk Indonesia Menua?
+            </h3>
+            <p class="heading">
+              Populasi penduduk yang menua itu merupakan konsekuensi dari perubahan struktur penduduk yang ditandai oleh jumlah penduduk 
+              lansia berumur lebih dari 60 tahun yang mencapai lebih dari 10 persen dari total penduduk. Lonjakan lansia ini dipicu oleh 
+              menurunnya jumlah kelahiran dan kematian hingga meningkatkan usia harapan hidup penduduk. Nah, berdasarkan catatan BPS, 
+              fenomena ini mulai terjadi sejak tahun 2021 di mana persentase penduduk lansia di Indonesia sudah mencapai 10,82 persen.
+              Artinya, pada tahun 2021, dari 10 penduduk yang ada di Indonesia, paling tidak ada 1 orang penduduk lansia.
+            </p>
+            <div class="container1">
+              <img class="bgkabar bgkabar1" src="/aset/img/intro/menua.svg" style="margin-top:20px;" 
+              pinger-seen="true" data-aos="fade-right" data-aos-delay="300">
+            </div>
+          </div>
+        </section>
+        <!-- ======= Panjang Umur ======= -->
+
+        <!-- ======= Penuaan ======= -->
+        <section id="penuaan" class="timeline-carousel gallery">
+          <div class="container1" data-aos="zoom-in" data-aos-delay="100" style="background-color: #8f2978;">  
+            <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel" data-aos="fade-up" style="background-color: #8f2978;">
+                <!--Timeline item-->
+                <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                    <span class="year">2020:<br>Dominasi Usia Muda<br></span>
+                    <p style="font-size:13px">🔍 Klik gambar untuk memperbesar visualisasi</p>
+                 </div>
+                    <div class="timeline-carousel__image">
+                      <a href="aset/img/piramida/piramida1.svg" class="pop-lightbox" data-gall="pop-item">
+                       <div class="media-wrapper media-wrapper--overlay" style="background: url('aset/img/piramida/piramida1.svg') center center; background-size:cover;"></div>
+                      </a>
+                      </div>
+                    
+                    <div class="timeline-carousel__item-inner"> </div>
+                    
+                 </div>
+                 <!--/Timeline item-->
+
+                <!--Timeline item-->
+                <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                    <span class="year">2030:<br>Usia Produktif Melimpah<br></span>
+                    <p style="font-size:13px">🔍 Klik gambar untuk memperbesar visualisasi</p>
+                 </div>
+                    <div class="timeline-carousel__image">
+                      <a href="aset/img/piramida/piramida2.svg" class="pop-lightbox" data-gall="pop-item">
+                       <div class="media-wrapper media-wrapper--overlay" style="background: url('aset/img/piramida/piramida2.svg') center center; background-size:cover;"></div>
+                      </a>
+                      </div>
+                    
+                    <div class="timeline-carousel__item-inner"> </div>
+                    
+                 </div>
+                 <!--/Timeline item-->
+
+                <!--Timeline item-->
+                <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                    <span class="year">2040:<br>Penduduk Lansia Melonjak<br></span>
+                    <p style="font-size:13px">🔍 Klik gambar untuk memperbesar visualisasi</p>
+                 </div>
+                    <div class="timeline-carousel__image">
+                      <a href="aset/img/piramida/piramida3.svg" class="pop-lightbox" data-gall="pop-item">
+                       <div class="media-wrapper media-wrapper--overlay" style="background: url('aset/img/piramida/piramida3.svg') center center; background-size:cover;"></div>
+                      </a>
+                      </div>
+                    
+                    <div class="timeline-carousel__item-inner"> </div>
+                    
+                 </div>
+                 <!--/Timeline item-->
+
+                 <!--Timeline item-->
+                <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                    <span class="year">2050:<br>Penduduk Indonesia Semakin Menua<br></span>
+                    <p style="font-size:13px">🔍 Klik gambar untuk memperbesar visualisasi</p>
+                 </div>
+                    <div class="timeline-carousel__image">
+                      <a href="aset/img/piramida/piramida4.svg" class="pop-lightbox" data-gall="pop-item">
+                       <div class="media-wrapper media-wrapper--overlay" style="background: url('aset/img/piramida/piramida4.svg') center center; background-size:cover;"></div>
+                      </a>
+                      </div>
+                    
+                    <div class="timeline-carousel__item-inner"> </div>
+                    
+                 </div>
+                 <!--/Timeline item-->
+            </div>
+            <p style="font-size: 13px; color: #fff; text-align: center; margin-top: 20px;">Sumber: BPS, Proyeksi Penduduk Indonesia 2020-2050</p>
+          </div>
+        </section>
+        <!-- ======= Penuaan ======= -->
+
+        <!-- ======= Tantangan ======= -->
+        <section id="tantangan" class="tantangan">
+          <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="heading0">
+              Tantangan Indonesia Menghadapi Penuaan Penduduk
+            </h3>
+            <p class="heading">
+                Seperti yang diketahui, penuaan penduduk di Indonesia sudah dimulai sejak tahun 2021 dan diproyeksikan akan terus berlanjut
+                hingga 20-30 tahun mendatang. Jika tidak dipersiapkan, kelompok penduduk lanjut usia yang cenderung rentan ini akan menjadi 
+                beban ekonomi dan sosial. BPS mencatat setidaknya ada delapan provinsi di Indonesia yang sudah mengalami penuaan penduduk 
+                dengan persentase lansia di atas 10 persen pada tahun 2022.
+              </p>
+            </div>
+            <div class="container1" style="margin-top: 20px;">
+              <img class="bgkabar bgkabar1" src="/aset/img/tantangan/lansia-prov.svg" style="margin-top:20px;" 
+              pinger-seen="true" data-aos="fade-right" data-aos-delay="300">
+            </div>
+          </div>    
+          
+          <div id="mapsection">
+            <div class="container1 d-flex" id="map" data-aos="fade-right" data-aos-delay="100"></div>
+            
+            <script src="aset/js/lansia.js"></script>
+            <script>
+            var indonesia_view=[-2.5489,118.0149];
+            var map = L.map('map',{
+              zoomSnap: 0,
+              zoomDelta: 0.25,
+            }).setView(
+              indonesia_view
+              , 4.5
+            );
+            L.tileLayer(
+              'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png', 
+              {
+                maxZoom: 18,
+                attribution: 'Sumber: BPS, Statistik Penduduk Lanjut Usia 2022, '+'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                id: 'mapbox.light'
+              }
+            ).addTo(map);
+  
+            var info = L.control();
+            
+            info.onAdd = function (map) {
+              this._div = L.DomUtil.create("div", "info");
+              this.update();
+              return this._div;
+            };
+  
+            info.update = function (props) {
+            //the number should be formated using thousand separator
+            var formatter = new Intl.NumberFormat('en-EN',
+            { useGrouping: true, maximumFractionDigits:0});
+              this._div.innerHTML = 
+              '<h5>Persentase Lansia</h5>' + 
+              (props 
+                ?'<b>' + 
+                props.NAME_1 +  
+                '</b><br />' + 
+                props.Lansia + '%'
+              : 'Arahkan kursor ke area provinsi');
+            };
+  
+            info.addTo(map);
+              // get color depending on population density value
+              // Define color categories and their corresponding colors
+              var colorCategories = {
+                "< 7%": '#FFEDA0',
+                "7%-9.99%": '#FD8D3C',
+                ">= 10%": '#BD0026'
+              };
+  
+              // get color depending on the data value
+              function getColor(d) {
+                if (d < 7) {
+                  return colorCategories["< 7%"];
+                } else if (d >= 7 && d < 10) {
+                  return colorCategories["7%-9.99%"];
+                } else {
+                  return colorCategories[">= 10%"];
+                }
+            }
+      
+            function style(feature) {
+              return {
+              weight: 1,
+              opacity: 1,
+              color: 'white',
+              dashArray: '3',
+              fillOpacity: 1,
+              fillColor: getColor(feature.properties.Lansia)
+              };
+            }
+          
+            function highlightFeature(e) {
+              var layer = e.target;
+          
+              layer.setStyle({
+                weight: 2,
+                color: '#000',
+                dashArray: '',
+                fillOpacity: 1
+              });
+          
+              if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront();
+              }
+          
+              info.update(layer.feature.properties);
+            }
+  
+            var geojson
+      
+            function zoomToFeature(e) {
+              map.fitBounds(e.target.getBounds());
+            }
+          
+            function resetHighlight(e) {
+              geojson.resetStyle(e.target);
+            }
+      
+            function onEachFeature(feature,layer) {
+              layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+                });
+            }
+      
+            geojson = L.geoJson(idnProvinces,{
+              style: style,
+              onEachFeature: onEachFeature
+              }
+            ).addTo(map);
+          
+            var legend = L.control({position: "bottomright"});
+          
+            legend.onAdd = function (map) {
+              var maxValue = 100;
+              var minValue = 0;
+              var div = L.DomUtil.create("div", "info legend"),
+                //for density only
+                grades = [0, minValue+6.99, maxValue-90.01],
+                labels = [],
+                from, to;
+          
+              for (var i = 0; i < grades.length; i++) {
+                //for density legend
+                from = grades[i];
+                to = grades[i + 1];
+              
+                labels.push(
+                  '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                  from.toFixed(2) + (to ? '&ndash;' + to.toFixed(2) : '+'));
+                }
+          
+                div.innerHTML = labels.join('<br>');
+                  return div;
+                };
+        
+                legend.addTo(map);
+              </script>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-delay="100">
+              <div class="heading" style="margin-bottom:20px;">
+                <p>
+                  Persentase lansia tertinggi terdapat di Provinsi Daerah Istimewa Yogyakarta sebanyak 16,69 persen, 
+                  disusul Jawa Timur dengan 13,86 persen, Bali 13,53 persen, dan Jawa Tengah 13,07 persen. Selebihnya adalah 
+                  di Sulawesi Utara (12,98 persen), Sumatera Barat (10,79 persen), Sulawesi Selatan (10,65 persen), dan Lampung 
+                  (10,24 persen). Dari provinsi tersebut, 4 dari 8 provinsi merupakan provinsi yang memiliki tingkat kemiskinan 
+                  yang tinggi, di atas 10 persen, yakni Lampung, Daerah Istimewa Yogyakarta, Jawa Tengah, dan Jawa Timur.
+                </p>
+                <p>
+                  Dengan kondisi usia lanjut yang cukup besar, persiapan untuk menghadapi lonjakan yang lebih besar harus dilakukan
+                  sejak awal. Karena mulai tahun 2040 nanti, bahkan Papua yang saat ini masih didominasi penduduk usia muda nantinya 
+                  proporsi penduduk lansianya akan memasuki angka 10 persen. Dengan mengidentifikasi tantangan yang ada, upaya
+                  untuk menghadapi lonjakan penduduk lansia di masa depan diharapkan dapat dipersiapkan secara matang dan efektif.
+                </p>
+              </div>
+              <h3 class="heading0">
+                Tantangan 1: Kemiskinan
+              </h3>
+              <p class="heading">
+                Penduduk lansia merupakan kelompok rentan. Hal itu selain disebabkan menurunnya kapasitas fisik, mental, dan 
+                kognitif yang berpengaruh pada kesehatan, juga karena tidak lagi produktif dan mandiri secara ekonomi. Faktor-faktor 
+                tersebut menyebabkan lansia lebih rentan untuk hidup dalam kemiskinan, sehingga kualitas hidup lansia dapat dilihat 
+                dari status ekonominya.
+              </p>
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/tantangan/lansia-kerja.svg" style="margin-top: 20px;" 
+                pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+              </p>
+              <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Sakernas Agustus 2022)</p>
+
+              <p class="heading" style="margin-top: 0;">
+                Dengan kemampuan kerja yang semakin menurun, maka jumlah pendapatan pun semakin menurun atau bahkan menjadi hilang sama sekali. 
+                Secara ekonomi kondisi tersebut akan membawa masalah terhadap lansia, terutama bagi lansia yang tidak berkecukupan secara ekonomi.
+              </p>
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/tantangan/lansia-miskin.svg" style="margin-top: 20px;" 
+                pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+              </p>
+              <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Susenas 2022)</p>
+
+              <h3 class="heading0">
+                Tantangan 2: Beban Ketergantungan Meningkat
+              </h3>
+                <p class="heading">
+                  Meningkatnya jumlah penduduk lansia akan meningkatkan pula angka ketergantungan penduduk kelompok lansia 
+                  terhadap kelompok usia produktif. Rasio ketergantungan lansia yang menunjukkan perbandingan jumlah penduduk lansia 
+                  terhadap jumlah penduduk usia produktif meningkat dalam satu dekade terakhir, yaitu dari 12,01 (2012) menjadi 16,09 
+                  (2022). Sementara itu, berdasarkan hasil proyeksi Sensus Penduduk, angka ketergantungan lansia pada tahun 2050 akan 
+                  mencapai angka 33,75. Ukuran rasio ketergantungan lansia ini mengasumsikan semua penduduk usia produktif terserap 
+                  dalam pasar kerja (berpenghasilan) dan penduduk lanjut usia tidak masuk dalam pasar kerja (tidak berpenghasilan).
+                </p>
+
+                <p style="text-align: center;">
+                  <img class="bgkabar bgkabar1" src="/aset/img/tantangan/lansia-ketergantungan.svg" style="margin-top: 20px;" 
+                  pinger-seen="true" data-aos="flip-up" data-aos-delay="100">
+                </p>
+                <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Susenas 2022)</p>
+
+                <div class="heading" style="margin-bottom:20px;">
+                  <p>
+                    Jika pada tahun 2012 kehidupan 1 penduduk lansia bisa ditanggung oleh 8 penduduk produktif, selanjutnya pada tahun 2022 
+                    kehidupan 1 penduduk lansia hanya ditanggung oleh 6 penduduk produktif, sementara itu pada tahun 2050 diproyeksikan 
+                    setiap 3 orang penduduk produktif akan menanggung 1 penduduk lansia. 
+                  </p>
+                  <p>
+                    Jumlah penduduk lansia semakin meningkat tapi dukungan dari penduduk produktif semakin berkurang. Di sisi lain, semakin 
+                    lama, beban yang ditanggung oleh penduduk produktif akan semakin berat, otomatis tabungan penduduk produktif semakin 
+                    lama akan semakin berkurang dan akan mendorong pertumbuhan generasi sandwich. Terlebih, tahun 2050 diproyeksikan 
+                    akan menjadi puncak bonus demografi dimana pertumbuhan penduduk produktif semakin melambat.
+                  </p>
+                </div>
+
+                <h3 class="heading0">
+                  Tantangan 3: Kesehatan
+                </h3>
+                <p class="heading">
+                    Tantangan terbesar lansia lainnya adalah menjaga kesehatan. Pada umumnya, penyakit yang dialami lansia adalah penyakit 
+                    yang bersifat generatif atau yang disebabkan oleh faktor usia dan penyakit tidak menular, seperti penyakit jantung, 
+                    diabetes mellitus, stroke, dan rematik.
+                </p>
+                <p style="text-align: center;">
+                  <img class="bgkabar bgkabar1" src="/aset/img/tantangan/lansia-sakit.svg" style="margin-top: 20px;" 
+                  pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+                </p>
+                  <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Susenas 2022)</p>
+                <p class="heading" style="margin-bottom: 40px;">
+                    Pada tahun 2022, angka kesakitan warga lansia masih sekitar 20,71 persen. Hal ini berarti bahwa sekitar satu dari lima orang lansia 
+                    pernah sakit dalam satu bulan terakhir. Kondisi ini cukup mengkhawatirkan karena akan sangat mengganggu para lansia dalam menjalani 
+                    kesehariannya serta berakibat pada meningkatnya biaya untuk kebutuhan kesehatan bagi lansia. 
+                </p>
+              </div>
+            </div>      
+        </section>
+        <!-- ======= Tantangan ======= -->
+
+        <!-- ======= Peluang ======= -->
+        <section id="peluang" class="peluang">
+          <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="heading0">
+              Peluang Memetik Bonus Demografi Kedua?
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p>
+                Bonus demografi kedua dideskripsikan sebagai keadaan suatu negara atau wilayah ketika proporsi dari penduduk yang 
+                berusia tua semakin banyak, tetapi mereka yang dikategorikan penduduk lansia ini masih produktif (berpenghasilan) dan 
+                masih memberikan sumbangan bagi perekonomian negara.
+              </p>
+              <p>
+                Melonjaknya penduduk usia lanjut ini merupakan keniscayaan ketika jumlah penduduk produktif saat ini berlimpah, 
+                tetapi beberapa tahun yang akan datang mereka akan memasuki usia lanjut. 
+              </p>
+              <p>
+                Oleh karena itu, penting sekali untuk memperhatikan situasi dan kondisi penduduk pra lansia dan lansia saat ini. Sebab, lonjakan penduduk lansia 
+                bisa menjadi bonus demografi kedua ketika para lansia masih memiliki pendapatan lebih besar ketimbang konsumsinya 
+                sehingga masih bisa menabung untuk membiayai kebutuhan hidupnya tanpa bergantung pada penduduk muda yang masih produktif.
+              </p>
+            </div>
+            <p style="text-align: center;">
+              <img class="bgkabar bgkabar1" src="/aset/img/peluang/harta-karun.svg" 
+              pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+            </p>
+            <h3 class="heading0">
+              Penduduk Lansia Sebagai Harta Karun
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p>
+                Selama ini, perhatian yang begitu besar diberikan kepada generasi muda. Generasi ini memang calon-calon pemimpin dan 
+                profesional masa depan, serta jadi sumber utama bonus demografi pertama. Kendati demikian, bukan berarti penduduk yang 
+                telah berusia lanjut tidak dapat berperan dalam masyarakat dan perekonomian negara. Selama ini masyarakat cenderung 
+                meremehkan para lansia karena dianggap masa mereka telah ”lewat” sehingga lebih baik tinggal di rumah.
+              </p>
+              <p>
+                Anggapan demikian adalah keliru. Justru pengetahuan, pengalaman, dan kearifan serta jejaring mereka sangatlah 
+                bernilai untuk dimanfaatkan. Dengan demikian, agaknya tepat jika dikatakan bahwa penduduk lansia adalah layaknya ”harta karun” 
+                bagi masyarakat.
+              </p>
+            </div>
+            <h3 class="heading0">
+              Mempersiapkan Lansia Aktif dan Produktif
+            </h3>
+            <p class="heading" style="margin-bottom: 20px;">
+              Mempersiapkan penduduk yang tetap aktif dan produktif di saat lansia harus dengan perencanaan yang matang. Tentunya hal itu tidak 
+              terjadi dengan sendirinya atau instan, harus dimulai di saat penduduk masih di usia produktif. Dengan upaya yang tepat, menjadi 
+              tua diharapkan dapat menjadi perjalanan yang membahagiakan, berkualitas, dan menjadikan penduduk lansia tetap aktif, produktif, 
+              dan bermanfaat.
+            </p>
+            <h3 class="heading2" number="1.">
+              Pendidikan Sebagai Kunci
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/peluang/lansia-kerja-1.svg" style="margin-top: 20px;" 
+                pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+              </p>
+              <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Sakernas Agustus 2022)</p>
+              <p>
+                Lansia yang bekerja masih didominasi oleh lansia berpendidikan rendah sehingga banyak lansia yang bekerja di sektor
+                informal dan tergolong pekerja rentan. Dalam hal ini, pendidikan menjadi kunci untuk pemberdayaan lansia agar tetap aktif dan 
+                mandiri, baik secara ekonomi maupun sosial. Hal itu sekaligus akan menjadi jalan untuk mewujudkan penduduk yang sehat dan 
+                sejahtera di segala usia, dimulai dari penduduk produktif, kemudian berlanjut ketika menjadi penduduk lansia di masa depan. 
+                Diharapkan dengan adanya peningkatan pendidikan, sektor pekerjaan lansia dapat bergeser dari sektor informal ke sektor formal.
+              </p>
+            </div>
+
+            <h3 class="heading2" number="2.">
+              Pengembangan Silver Economy
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/peluang/antara.svg" 
+                pinger-seen="true" data-aos="flip-up" data-aos-delay="100">
+              </p>
+              <p>
+                Silver Economy adalah potensi ekonomi yang berfokus pada kebutuhan, preferensi, dan kontribusi ekonomi dari penduduk lansia. 
+                Penduduk lansia Indonesia diproyeksikan akan berjumlah 2-3 kali lipat lebih besar pada tahun 2040 dibandingkan dengan kondisi 
+                saat ini. Artinya, kedepan pasar Indonesia akan didominasi oleh konsumen dari kalangan penduduk lansia. Silver economy diharapkan 
+                mampu menghidupkan roda perekonomian yang bersumber dari penduduk lansia, menawarkan kesempatan kerja dan wirausaha bagi 
+                penduduk lansia, serta menciptakan pasar bagi konsumen lansia. 
+              </p>
+              <p>
+                Silver economy sendiri mencakup berbagai aspek kehidupan ekonomi yang terkait dengan penduduk lansia, termasuk konsumsi, 
+                layanan kesehatan, perumahan, transportasi, rekreasi, dan sebagainya. Oleh karena itu, pemerintah perlu berinvestasi dalam 
+                perumahan yang ramah lansia, pelayanan kesehatan yang terjangkau, pelatihan keterampilan lanjut usia, dan program sosial 
+                yang memungkinkan lansia berpartisipasi aktif dalam kegiatan ekonomi dan sosial.
+              </p>
+            </div>
+
+            <h3 class="heading2" number="3.">
+              Kesehatan
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p>
+                Kelompok lansia yang telah membiasakan pola hidup sehat sejak muda akan memiliki kondisi kesehatan yang lebih baik dibandingkan 
+                dengan mereka yang masa lalunya tidak berperilaku hidup sehat. Meski demikian, potensi untuk menjadi lansia yang sehat dan 
+                aktif akan berhadapan dengan meningkatnya risiko berbagai macam penyakit, khususnya penyakit terkait proses penuaan. Oleh 
+                karena itu, dukungan pemerintah dari sisi penyediaan jaminan kesehatan dan peningkatan pelayanan kesehatan untuk lansia juga
+                tetap dibutuhkan.
+              </p>
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/peluang/lansia-sehat.svg" 
+                pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+              </p>
+              <p style="font-size: 12px; color: #222; text-align: center;">Sumber: BPS, Statistik Penduduk Lanjut Usia 2022 (Susenas 2022)</p>
+            </div>
+
+            <h3 class="heading2" number="4.">
+              Dukungan Keluarga dan Lingkungan
+            </h3>
+            <div class="heading" style="margin-bottom: 20px;">
+              <p>
+                Lansia sering mengalami rasa ketersendirian dan merasa terisolasi, padahal kesehatan mental dan sosial adalah komponen kualitas 
+                hidup yang penting bagi penduduk lansia. Mereka yang tetap aktif secara sosial dan terstimulasi secara mental dapat mengusir rasa 
+                kesepian, depresi, dan penurunan fungsi kognitif. Bersosialisasi dengan teman dan keluarga, terlibat dalam hobi atau keseminatan, 
+                serta berpartisipasi dalam kegiatan sosial keagamaan di masyarakat semuanya berperan penting dalam menjaga kebahagiaan dan kesehatan 
+                mental kelompok lansia.
+              </p>
+              <p>
+                Di satu sisi, penduduk produktif yang berusia muda pun tak lepas dari permasalahan kesehatan mental dan sosial. Sedari dini, 
+                perlu juga mengedukasi para pemuda membangun komunitas sosial dan menyebarkan semangat agar ketika kelak memasuki usia 
+                lanjut paling tidak komunitas tersebut terjaga produktivitasnya. Demikian pula pendekatan pada para pemuda menjadi titik 
+                tumpu edukasi caregivers (pengasuh) bagi lansia, minimal bagi keluarga dan komunitas terdekatnya.
+              </p>
+              <p style="text-align: center;">
+                <img class="bgkabar bgkabar1" src="/aset/img/peluang/lansia-dukungan.svg" 
+                pinger-seen="true" data-aos="fade-right" data-aos-delay="100">
+              </p>
+            </div>
+            <p class="heading" style="margin-bottom: 60px;">
+                Terdapat banyak upaya, baik secara mandiri maupun sebagai program pemerintah dan masyarakat, yang dapat dilakukan untuk 
+                meningkatkan kualitas hidup penduduk lansia. Dengan mempertimbangkan kebutuhan dan tantangan terkait bonus demografi tersebut, 
+                kita dapat bersama-sama menciptakan masyarakat yang menghargai dan mendukung penduduk lansia. Indonesia akan beruntung 
+                jika bonus demografi bisa diberdayakan tidak hanya pada penduduk muda, tetapi juga pada lansia aktif dan produktif. Selain 
+                itu, jika penduduk lansia tetap diberikan peran sesuai kondisinya, kontribusinya juga akan bernilai bagi pembangunan.
+            </p>
+          </div>
+        </section>
+        <!-- ======= Peluang ======= -->
+
+        <!-- ======= Footer ======= -->
+        <footer>
+          <div class="credit">
+            <div class="container">
+                <div class="creditWrap">
+                    <div class="creditWrap-col" data-aos="fade-right" data-aos-delay="100">
+                        <div class="creditItem">
+                          <div class="creditItem-team">
+                            Penulis, UI/UX, Desainer, Analisis Data:
+                          </div>
+                          <div class="creditItem-member">
+                            Ryan W. Januardi
+                          </div>
+                        </div>
+                        <div class="creditItem">
+                          <div class="creditItem-team">
+                            Sebagian Ilustrasi Bersumber dari:
+                          </div>
+                          <div class="creditItem-member">
+                            Freepik.com
+                          </div>
+                          <div class="creditItem-member">
+                            Ryan W. Januardi
+                          </div>
+                        </div>
+                        <div class="creditItem">
+                          <div class="creditItem-team">
+                            Sumber Pustaka:
+                          </div>
+                          <div class="creditItem-member">
+                            Badan Pusat Statistik (bps.go.id)
+                          </div>
+                          <div class="creditItem-member">
+                            Kompas.id
+                          </div>
+                          <div class="creditItem-member">
+                            Antaranews.com
+                          </div>
+                        </div>
+                        <div class="creditItem">
+                          <div class="creditItem-team">
+                            Copyright 2023
+                          </div>
+                          <div class="creditItem-member">
+                            Ryan W. Januardi
+                          </div>
+                          <div class="creditItem-member">
+                            Semua Hak Dilindungi
+                          </div>
+                        </div>
+                        <div class="creditItem">
+                          <div class="creditItem-member">
+                            Halaman ini merupakan Proyek Website Storytelling yang sedang dilombakan pada kegiatan 
+                            <a href="https://datastory.web.bps.go.id/">Data Storytelling Challenge BPS 2023.</a><br>
+                            Peserta bertanggung jawab penuh terhadap karya yang dikirimkan.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </footer>
+        <!-- ======= Footer ======= -->
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+        <script src="aset/vendor/aos/aos.js"></script>
+        <script src="aset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="aset/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+
+        <!-- Main JS Files -->
+        <script src="aset/js/main.js"></script>
+        <script src="aset/js/timeline.js"></script>
+        <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+          })
+        </script>
+    </body>
+
+</html>
