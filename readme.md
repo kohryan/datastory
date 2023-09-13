@@ -13,14 +13,14 @@ Diakui atau tidak, penuaan penduduk di Indonesa telah menjadi sebuah fenomena. B
 ![enter image description here](https://www.kohryan.page/images/misc/desain1.png)
 **Desain Final:**
 ![enter image description here](https://www.kohryan.page/images/misc/desain2.png)
- 
+
  5. Agar terkesan santai dan menarik, tema yang diambil adalah tema komik dengan pewarnaan cerah dan font komik. 
  6. Barulah penulisan kode CSS dan HTML dituangkan ke code editor sesuai dengan desain dan outline yang telah dirancang. Sementara untuk kode JavaScript kebanyakan menggunakan library JS yang tersedia bebas di internet.
  
 #### Bahasa yang Digunakan
 <img  height="20" alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img  height="20" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-   <img  height="20" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+<img  height="20" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img  height="20" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 
 #### Sumber Data dan Analisis yang Digunakan
 Data yang digunakan dalam Website Story Telling ini berasal dari data BPS yang meliputi:
@@ -49,4 +49,7 @@ Selain framework/library baik CSS maupun JS yang digunakan untuk kebutuhan front
 #### Sumber Aset
 Sebagian ilustrasi bersumber dari [freepik.com](https://freepik.com), untuk infografis adalah buatan sendiri. Sementara untuk aset foto: foto BKKBN (bersumber dari [Kompas.id](https://kompas.id)) dan foto kutipan perkataan Kepala Bappenas bersumber dari [Koran Antara](https://antaranews.com)
 
+## Penyusun
+Penulis, UI/UX, Desainer, Analisis Data: [Ryan W. Januardi](https://kohryan.page)
 
+Sumber Daya: [https://github.com/kohryan/datastory](https://github.com/kohryan/datastory)
