@@ -5,11 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Potret Sulawesi Tenggara Tahun 2022</title>
     <link href="potret-sultra-2022/css/main.css" rel="stylesheet">
+    <link href="potret-sultra-2022/css/header.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/jquery-3.5.0.min.js"></script>
   </head>
   <body class="bg-primary" style="overflow-x: hidden">
+    <!-- header -->
+	<header class="header -fixed">
+		<nav>
+			<div id="menuToggle">
+			  <div class="menuToggle-nav">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </div>
+
+			  <ul id="menu">
+				<li><a href="" title="Intro">Beranda</a></li>
+				<li><a href="#geografi" title="Wilayah">Letak Geografis & Wilayah Administratif</a></li>
+				<li><a href="#penduduk" title="Penduduk">Kependudukan</a></li>
+			  </ul>
+			</div>
+		</nav>
+	</header>	
+
     <div class="pt-lg-3 py-3" style="background: url('potret-sultra-2022/img/bgrid.svg') center center">
         <h1 class="d-none">Potret Sulawesi Tenggara Tahun 2022</h1>
         <img src="potret-sultra-2022/img/cloud.svg" class="cloud-1 d-none d-lg-block">
@@ -28,7 +49,7 @@
     <img src="potret-sultra-2022/img/cover.svg" class="w-100 d-block d-lg-none">
     
     <div class="bg-secondary pt-5">
-        <div class="container">
+        <div id="geografi" class="container">
             <h3 class="text-primary text-center display-6 fw-semibold" data-aos="fade-up">Di Manakah Sulawesi Tenggara Berada?</h3>
             <p class="text-primary text-center" data-aos="fade-up">
                 Sulawesi Tenggara adalah sebuah provinsi di Indonesia yang terletak di bagian tenggara pulau Sulawesi dengan ibu kota Kendari.
@@ -95,7 +116,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/1.luaswilayah.html" width="100%" height="400"></iframe>   
+                                        <iframe class="rounded-5" src="html/1.luaswilayah.html" width="100%" height="400"></iframe>   
                                         <center><a href="https://sultra.bps.go.id/statictable/2023/05/29/4451/luas-daerah-dan-jumlah-pulau-menurut-kabupataen-kota-di-provinsi-sulawesi-tenggara-2022.html" target="_blank" class="btn btn-info rounded-pill text-white" data-aos="fade-up" data-anijs="if: mouseenter, do: pulse animated">Lihat Tabel <i class="bi bi-grid"></i></a></center>                    
                                     </div>
                                 </div>
@@ -263,7 +284,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm text-white">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>  
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/2.penduduk.html" width="100%" height="400"></iframe> 
+                                        <iframe class="rounded-5" src="html/2.penduduk.html" width="100%" height="400"></iframe> 
                                         <small class="d-inline-flex gap-1 pt-2 text-sm text-white">
                                             Sumber: BPS, Proyeksi Penduduk Hasil Sensus Penduduk 2020
                                         </small>                                        
@@ -283,7 +304,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm text-white">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>  
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/3.penduduklaki.html" width="100%" height="400"></iframe> 
+                                        <iframe class="rounded-5" src="html/3.penduduklaki.html" width="100%" height="400"></iframe> 
                                         <small class="d-inline-flex gap-1 pt-2 text-sm text-white">
                                             Sumber: BPS, Proyeksi Penduduk Hasil Sensus Penduduk 2020<br>
                                         </small>                                        
@@ -301,7 +322,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm text-white">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>  
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/4.pendudukperempuan.html" width="100%" height="400"></iframe> 
+                                        <iframe class="rounded-5" src="html/4.pendudukperempuan.html" width="100%" height="400"></iframe> 
                                         <small class="d-inline-flex gap-1 pt-2 text-sm text-white">
                                             Sumber: BPS, Proyeksi Penduduk Hasil Sensus Penduduk 2020<br>
                                         </small>                                        
@@ -319,7 +340,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm text-white">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>  
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/5.rjk.html" width="100%" height="400"></iframe> 
+                                        <iframe class="rounded-5" src="html/5.rjk.html" width="100%" height="400"></iframe> 
                                         <small class="d-inline-flex gap-1 pt-2 text-sm text-white">
                                             Sumber: BPS, Proyeksi Penduduk Hasil Sensus Penduduk 2020<br>
                                         </small>                                        
@@ -346,7 +367,7 @@
                                         <small class="d-inline-flex gap-1 pb-2 text-sm text-white">
                                             Letakkan kursor pada peta dan scroll untuk memperbesar peta statistik<br>
                                         </small>  
-                                        <iframe class="rounded-5" src="potret-sultra-2022/html/6.kepadatan.html" width="100%" height="400"></iframe> 
+                                        <iframe class="rounded-5" src="html/6.kepadatan.html" width="100%" height="400"></iframe> 
                                         <small class="d-inline-flex gap-1 pt-2 text-sm text-white">
                                             Sumber: BPS, Proyeksi Penduduk Hasil Sensus Penduduk 2020<br>
                                         </small>                                        
@@ -381,13 +402,13 @@
                             Sulawesi Tenggara telah mengalami bonus demograﬁ pada periode lima tahunan (2020-2035). Jumlah penduduk usia produktif 
                             (usia 15-64 tahun) menunjukkan kecenderungan menurun dengan titik terendah sebesar 48,74 persen di tahun 2025.
                         </h3>
+                        <center><img src="potret-sultra-2022/img/penduduk2.svg" class="py-4 img-fluid"></center>
                     </div>
                 </div>
         </div>
         
         
         <div class="bg-primary">
-            <img src="potret-sultra-2022/img/wave3.svg" class="w-100 mb-n2">
             <div class="container mb-5">
                 <div class="row" style="max-width: 900px; margin: 0 auto;">
                     <div class="col-12 text-white text-sm">
@@ -400,7 +421,8 @@
     </div>
     
     
-
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="potret-sultra-2022/js/main.js"></script>
     <script src="potret-sultra-2022/js/anijs-min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

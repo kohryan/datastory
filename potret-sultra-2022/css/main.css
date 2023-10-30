@@ -4,6 +4,17 @@ body {
   font-family: "Rubik", sans-serif !important;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header,
+nav,
+section {
+  display: block;
+}
+
 p {
   font-size: 1.25rem;
 }
@@ -431,10 +442,18 @@ sup {
 
 a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+  
+}
+
+a:focus,
+button:focus {
+  outline: 0;
+  outline: 0 auto -webkit-focus-ring-color;
+  outline-offset: 0;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3806,20 +3825,6 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-.nav {
-  --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: var(--bs-secondary-color);
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
 }
 
 .nav-link {
@@ -12663,5 +12668,40 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.back-to-top {
+  position: fixed;
+  background-color: #FCCF47;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  border: 2px solid #FCCF47;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #323232;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #323232;
+  color: #323232;
+  border: 2px solid #323232;
+}
+
+.back-to-top:hover i {
+  color: #FCCF47;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /*# sourceMappingURL=main.css.map */
