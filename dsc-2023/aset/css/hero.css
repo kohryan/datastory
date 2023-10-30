@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+Tidak jadi dipakai 
+
+:root {
+    --char-height: calc(var(--char-width) / 1.3);
+    --char-width: 380px
+  }
+
+  .hero-wrapper {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+  }
+
+  .char {
+    width: var(--char-width);
+    height: var(--char-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 36px;
+    perspective: 2500px;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .char-wrap {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .char:hover .char-wrap {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  }
+  
+  .char-wrap::before,
+  .char-wrap::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  .char-wrap::before {
+    top: 0;
+    height: 100%;
+  }
+  .char-wrap::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .char:hover .char-wrap::before,
+  .char-wrap::after {
+    opacity: 1;
+  }
+  
+  .char:hover .char-wrap::after {
+    height: 120px;
+  }
+  .title {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .char:hover .title {
+    height: -240px;
+    transform: translate3d(0%, -50px, 100px);
+  }
+  
+  .karakter {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .char:hover .karakter {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+  --------------------------------------------------------------*/
+
+  .button {
+    position: relative;
+    background-color: #ffa7b6;
+    color: #1C1C1C;
+    border: 2px solid #1C1C1C;
+    font-family: "Comic Neue", cursive;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 8px 30px;
+    text-transform: none; 
+    margin-top: 20px;
+  }
+
+  .button1 {
+    position: relative;
+    background-color: #ffa7b6;
+    color: #1C1C1C;
+    border: 2px solid #1C1C1C;
+    font-family: "Comic Neue", cursive;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 8px 30px;
+    text-transform: uppercase; 
+    margin-top: 20px;
+  }
+    .button:hover,
+    .button1:hover {
+      background: #4627e3;
+      color: #fff;
+      border: 2px solid #4627e3; 
+    }
